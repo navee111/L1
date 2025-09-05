@@ -1,4 +1,8 @@
-console.log("Hej, välkomen!")
+console.log(`
+    ★ ═══════════════ ★
+      HEJ VÄLKOMMEN!
+    ★ ═══════════════ ★
+`)
 
 const readline = require("readline").createInterface({
   input: process.stdin,
