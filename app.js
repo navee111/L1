@@ -1,3 +1,13 @@
+/**
+ * The main entry point of the application.
+ * This script prompts the user for their name and greets them.
+ * author Navid Navidi
+ * date 2024-06-10
+ * version 1.0.0
+ * license MIT
+ * repository https://github.com/navidnavid/hej-program
+ */
+
 console.log(`
     ★ ═══════════════ ★
       HEJ VÄLKOMMEN!
@@ -8,7 +18,10 @@ const readline = require("readline").createInterface({
   input: process.stdin,
   output: process.stdout,
 })
-
+/**
+ * Prompts the user for their name and handles the greeting
+ * @returns {void}
+ */
 function askForName() {
   readline.question("vad heter du? ", (name) => {
     // tar bort mellanslag.
@@ -16,6 +29,7 @@ function askForName() {
 
     if (name === "" || name.length === 0) {
       console.log("Du måste ange ett namn!")
+      
       askForName() // fråga igen.
     } else {
       console.log(`Hej ${name}, välkomen!`)
@@ -26,5 +40,5 @@ function askForName() {
     }
   })
 }
-
+// Start the program:
 askForName()
