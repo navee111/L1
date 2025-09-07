@@ -1,11 +1,8 @@
 /**
  * The main entry point of the application.
  * This script prompts the user for their name and greets them.
- * author Navid Navidi
- * date 2024-06-10
- * version 1.0.0
- * license MIT
- * repository https://github.com/navidnavid/hej-program
+ * @author Nawid. 
+ * @version 1.0.0
  */
 
 console.log(`
