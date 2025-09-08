@@ -1,3 +1,4 @@
+import readline from "readline"
 /**
  * The main entry point of the application.
  * This script prompts the user for their name and greets them.
